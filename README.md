@@ -1,3 +1,5 @@
+![image](https://github.com/angelodesenvolvedor/Pizzaria-Tech/assets/98216100/ab442d1c-e870-4bb7-878b-3550316cf811)
+
 # Pizzaria Tech
 
 - Este projeto é uma demonstração de uma pizzaria fictícia chamada Pizzaria Tech, desenvolvida com HTML5 e CSS.

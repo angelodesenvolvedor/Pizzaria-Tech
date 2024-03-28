@@ -5,3 +5,16 @@
 # 🔥 Introdução
 
 - O objetivo deste projeto é fornecer uma interface simples para uma pizzaria, apresentando um menu de pizzas e uma seleção de bebidas, juntamente com informações sobre a pizzaria e como entrar em contato.
+
+# 📦 Tecnologias usadas:
+- ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+- ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+
+## 👷 Autor
+
+* **Nome do dev** - *Função realizada* - [nome_do_dev](https://github.com/link_do_Perfil)
+
+## 📄 Licença
+
+* Esse projeto está sob a licença (nome da licença) - acesse os detalhes [LICENSE.md](https://github.com/link_da_licenca).  
+  

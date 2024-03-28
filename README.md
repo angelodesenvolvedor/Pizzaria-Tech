@@ -15,7 +15,7 @@
 
 ## 👷 Autor
 
-* **Nome do dev** - *Função realizada* - [nome_do_dev](https://github.com/link_do_Perfil)
+* **Angelo Silvano** - *Função realizada* - [nome_do_dev](https://github.com/link_do_Perfil)
 
 ## 📄 Licença
 

@@ -1,4 +1,5 @@
-![image](https://github.com/angelodesenvolvedor/Pizzaria-Tech/assets/98216100/ab442d1c-e870-4bb7-878b-3550316cf811)
+![image](https://github.com/angelodesenvolvedor/Pizzaria-Tech/assets/98216100/55f7b847-90cc-43a2-93e4-b50d589da5a2)
+
 
 # Pizzaria Tech
 

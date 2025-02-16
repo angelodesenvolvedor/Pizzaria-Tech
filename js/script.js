@@ -7,7 +7,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function closeMenu() {
         mobileMenu.classList.add('hidden');
-        timeoutId = null;
+        if (timeoutId) {
+            clearTimeout(timeoutId);
+            timeoutId = null;
+        }
     }
 
     menuToggle.addEventListener('click', function () {
@@ -21,10 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     document.addEventListener('click', function (event) {
-        const isClickInsideMenu = mobileMenu.contains(event.target);
-        const isClickInsideButton = menuToggle.contains(event.target);
-
-        if (!isClickInsideMenu && !isClickInsideButton && !mobileMenu.classList.contains('hidden')) {
+        if (!mobileMenu.classList.contains('hidden') && !menuToggle.contains(event.target) && !mobileMenu.contains(event.target)) {
             closeMenu();
         }
     });

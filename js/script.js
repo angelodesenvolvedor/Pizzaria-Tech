@@ -1,4 +1,3 @@
-// js/script.js
 document.addEventListener('DOMContentLoaded', function () {
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
@@ -8,19 +7,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function closeMenu() {
         mobileMenu.classList.add('hidden');
-        timeoutId = null; 
+        timeoutId = null; // Limpa o ID do timeout
     }
 
     menuToggle.addEventListener('click', function () {
         mobileMenu.classList.toggle('hidden');
 
+        // Limpa qualquer timeout existente
         if (timeoutId) {
             clearTimeout(timeoutId);
         }
 
+        // Define um timeout para fechar o menu após 3 segundos (ajuste conforme necessário)
         timeoutId = setTimeout(closeMenu, 3000);
     });
 
+    // Fecha o menu se o usuário clicar fora do menu e do botão
     document.addEventListener('click', function (event) {
         const isClickInsideMenu = mobileMenu.contains(event.target);
         const isClickInsideButton = menuToggle.contains(event.target);
@@ -30,10 +32,20 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    // Exibe o Nome da Seção
     menuLinks.forEach(link => {
         link.addEventListener('click', function (event) {
-            const sectionName = this.dataset.section;
-            sectionDisplay.textContent = `Você está em: ${sectionName}`;
+            event.preventDefault(); // Impede o comportamento padrão do link (navegar)
+            const targetId = this.getAttribute('href').substring(1); // Pega o ID do alvo (ex: "menu")
+            const targetSection = document.getElementById(targetId); // Encontra a seção
+            const sectionTitle = targetSection.querySelector('h2').textContent; // Pega o texto do H2
+            sectionDisplay.textContent = `Você está em: ${sectionTitle}`; // Exibe
+
+            //Opcional: Rola suavemente para a seção
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+            if (mobileMenu.classList.length === 0) {
+                closeMenu();
+            }
         });
     });
 });

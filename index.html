@@ -16,7 +16,7 @@
             <div class="flex justify-between items-center">
                 <h1 class="text-3xl font-bold">Pizzaria Tech</h1>
 
-                <!-- Hamburger Menu (Hidden on larger screens) -->
+                <!-- Botão do Menu Hamburger (Escondido em telas maiores) -->
                 <button id="menu-toggle" class="lg:hidden focus:outline-none">
                     <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
                         <path fill-rule="evenodd"
@@ -24,29 +24,29 @@
                     </svg>
                 </button>
 
-                <!-- Navigation Links -->
+                <!-- Links de Navegação -->
                 <nav class="hidden lg:block" id="nav-links">
                     <ul class="flex space-x-6">
-                        <li><a href="#menu" class="hover:text-gray-200 menu-link" data-section="Menu">Menu</a></li>
-                        <li><a href="#drink" class="hover:text-gray-200 menu-link" data-section="Bebidas">Bebidas</a></li>
-                        <li><a href="#about" class="hover:text-gray-200 menu-link" data-section="Sobre Nós">Sobre nós</a></li>
-                        <li><a href="#contact" class="hover:text-gray-200 menu-link" data-section="Contato">Contato</a></li>
+                        <li><a href="#menu" class="hover:text-gray-200 menu-link">Menu</a></li>
+                        <li><a href="#drink" class="hover:text-gray-200 menu-link">Bebidas</a></li>
+                        <li><a href="#about" class="hover:text-gray-200 menu-link">Sobre nós</a></li>
+                        <li><a href="#contact" class="hover:text-gray-200 menu-link">Contato</a></li>
                     </ul>
                 </nav>
             </div>
 
-            <!-- Mobile Menu (Hidden by default) -->
+            <!-- Menu Mobile (Escondido por padrão) -->
             <nav id="mobile-menu" class="lg:hidden hidden bg-red-600 py-2">
                 <ul class="flex flex-col items-center space-y-4">
-                    <li><a href="#menu" class="hover:text-gray-200 text-white menu-link" data-section="Menu">Menu</a></li>
-                    <li><a href="#drink" class="hover:text-gray-200 text-white menu-link" data-section="Bebidas">Bebidas</a></li>
-                    <li><a href="#about" class="hover:text-gray-200 text-white menu-link" data-section="Sobre Nós">Sobre nós</a></li>
-                    <li><a href="#contact" class="hover:text-gray-200 text-white menu-link" data-section="Contato">Contato</a></li>
+                    <li><a href="#menu" class="hover:text-gray-200 text-white menu-link">Menu</a></li>
+                    <li><a href="#drink" class="hover:text-gray-200 text-white menu-link">Bebidas</a></li>
+                    <li><a href="#about" class="hover:text-gray-200 text-white menu-link">Sobre nós</a></li>
+                    <li><a href="#contact" class="hover:text-gray-200 text-white menu-link">Contato</a></li>
                 </ul>
             </nav>
         </div>
 
-        <!-- Display Section Name -->
+        <!-- Exibe o Nome da Seção -->
         <div id="section-display" class="text-center text-white py-2"></div>
     </header>
 
@@ -54,7 +54,7 @@
         <section id="menu" class="py-12">
             <div class="container mx-auto px-4">
                 <h2 class="text-3xl font-semibold mb-6 text-center">Menu</h2>
-                <!-- Pizza Menu -->
+                <!-- Menu de Pizzas -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!-- Pizza 1 -->
                     <div class="bg-white rounded-lg shadow-md overflow-hidden">
@@ -127,12 +127,12 @@
                     </div>
                 </div>
 
-                <!-- Drink Menu -->
+                <!-- Menu de Bebidas -->
                 <h2 class="text-3xl font-semibold mt-12 mb-6 text-center">Bebidas</h2>
                 <section id="drink">
                     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
 
-                        <!-- Drink 1 -->
+                        <!-- Bebida 1 -->
                         <div class="bg-white rounded-lg shadow-md overflow-hidden">
                             <img src="./image/refrigerante.jpg" alt="Refrigerante" class="w-full h-32 object-cover">
                             <div class="p-4">
@@ -144,7 +144,7 @@
                             </div>
                         </div>
 
-                        <!-- Drink 2 -->
+                        <!-- Bebida 2 -->
                         <div class="bg-white rounded-lg shadow-md overflow-hidden">
                             <img src="./image/fantauva.jpg" alt="Refrigerante Fanta-Uva"
                                 class="w-full h-32 object-cover">
@@ -157,7 +157,7 @@
                             </div>
                         </div>
 
-                        <!-- Drink 3 -->
+                        <!-- Bebida 3 -->
                         <div class="bg-white rounded-lg shadow-md overflow-hidden">
                             <img src="./image/pepsi.jpg" alt="Refrigerante Pepsi" class="w-full h-32 object-cover">
                             <div class="p-4">
@@ -169,7 +169,7 @@
                             </div>
                         </div>
 
-                        <!-- Drink 4 -->
+                        <!-- Bebida 4 -->
                         <div class="bg-white rounded-lg shadow-md overflow-hidden">
                             <img src="./image/cocacola.jpg" alt="Refrigerante Coca-Cola" class="w-full h-32 object-cover">
                             <div class="p-4">
@@ -181,7 +181,7 @@
                             </div>
                         </div>
 
-                        <!-- Drink 5 -->
+                        <!-- Bebida 5 -->
                         <div class="bg-white rounded-lg shadow-md overflow-hidden">
                             <img src="./image/suco_laranja.jpg" alt="Suco de Laranja" class="w-full h-32 object-cover">
                             <div class="p-4">
@@ -193,7 +193,7 @@
                             </div>
                         </div>
 
-                        <!-- Drink 6 -->
+                        <!-- Bebida 6 -->
                         <div class="bg-white rounded-lg shadow-md overflow-hidden">
                             <img src="./image/agua.jpg" alt="Água Mineral" class="w-full h-32 object-cover">
                             <div class="p-4">
@@ -204,11 +204,9 @@
                                     class="comprar-button block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
                             </div>
                         </div>
-
-                        <!-- Drink 7 -->
+                        <!-- Bebida 7 -->
                         <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                            <img src="./image/guarana.jpg" alt="Refrigerante Guaraná Antarctica"
-                                class="w-full h-32 object-cover">
+                            <img src="./image/guarana.jpg" alt="Refrigerante Guaraná Antarctica" class="w-full h-32 object-cover">
                             <div class="p-4">
                                 <h3 class="text-lg font-semibold mb-2">Guaraná Antarctica</h3>
                                 <p class="text-gray-700 text-base mb-2">Lata de 350ml.</p>
@@ -218,7 +216,7 @@
                             </div>
                         </div>
 
-                        <!-- Drink 8 -->
+                        <!-- Bebida 8 -->
                         <div class="bg-white rounded-lg shadow-md overflow-hidden">
                             <img src="./image/sprite.jpg" alt="Refrigerante Sprite" class="w-full h-32 object-cover">
                             <div class="p-4">
@@ -230,7 +228,7 @@
                             </div>
                         </div>
 
-                        <!-- Drink 9 -->
+                        <!-- Bebida 9 -->
                         <div class="bg-white rounded-lg shadow-md overflow-hidden">
                             <img src="./image/fanta.jpg" alt="Refrigerante Fanta Laranja" class="w-full h-32 object-cover">
                             <div class="p-4">
@@ -242,7 +240,7 @@
                             </div>
                         </div>
 
-                        <!-- Drink 10 -->
+                        <!-- Bebida 10 -->
                         <div class="bg-white rounded-lg shadow-md overflow-hidden">
                             <img src="./image/agua_coco.jpg" alt="Água de Coco" class="w-full h-32 object-cover">
                             <div class="p-4">
@@ -254,7 +252,7 @@
                             </div>
                         </div>
 
-                        <!-- Drink 11 -->
+                        <!-- Bebida 11 -->
                         <div class="bg-white rounded-lg shadow-md overflow-hidden">
                             <img src="./image/suco_maracuja.jpg" alt="Suco de Maracujá" class="w-full h-32 object-cover">
                             <div class="p-4">
@@ -266,7 +264,7 @@
                             </div>
                         </div>
 
-                        <!-- Drink 12 -->
+                        <!-- Bebida 12 -->
                         <div class="bg-white rounded-lg shadow-md overflow-hidden">
                             <img src="./image/kuat.jpg" alt="Refrigerante Kuat" class="w-full h-32 object-cover">
                             <div class="p-4">

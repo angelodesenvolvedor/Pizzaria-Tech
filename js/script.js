@@ -1,6 +1,9 @@
+// js/script.js
 document.addEventListener('DOMContentLoaded', function () {
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
+    const sectionDisplay = document.getElementById('section-display');
+    const menuLinks = document.querySelectorAll('.menu-link');
     let timeoutId;
 
     function closeMenu() {
@@ -25,5 +28,12 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!isClickInsideMenu && !isClickInsideButton && !mobileMenu.classList.contains('hidden')) {
             closeMenu();
         }
+    });
+
+    menuLinks.forEach(link => {
+        link.addEventListener('click', function (event) {
+            const sectionName = this.dataset.section;
+            sectionDisplay.textContent = `Você está em: ${sectionName}`;
+        });
     });
 });

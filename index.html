@@ -27,10 +27,10 @@
                 <!-- Navigation Links -->
                 <nav class="hidden lg:block" id="nav-links">
                     <ul class="flex space-x-6">
-                        <li><a href="#menu" class="hover:text-gray-200">Menu</a></li>
-                        <li><a href="#drink" class="hover:text-gray-200">Bebidas</a></li>
-                        <li><a href="#about" class="hover:text-gray-200">Sobre nós</a></li>
-                        <li><a href="#contact" class="hover:text-gray-200">Contato</a></li>
+                        <li><a href="#menu" class="hover:text-gray-200 menu-link" data-section="Menu">Menu</a></li>
+                        <li><a href="#drink" class="hover:text-gray-200 menu-link" data-section="Bebidas">Bebidas</a></li>
+                        <li><a href="#about" class="hover:text-gray-200 menu-link" data-section="Sobre Nós">Sobre nós</a></li>
+                        <li><a href="#contact" class="hover:text-gray-200 menu-link" data-section="Contato">Contato</a></li>
                     </ul>
                 </nav>
             </div>
@@ -38,13 +38,16 @@
             <!-- Mobile Menu (Hidden by default) -->
             <nav id="mobile-menu" class="lg:hidden hidden bg-red-600 py-2">
                 <ul class="flex flex-col items-center space-y-4">
-                    <li><a href="#menu" class="hover:text-gray-200 text-white">Menu</a></li>
-                    <li><a href="#drink" class="hover:text-gray-200 text-white">Bebidas</a></li>
-                    <li><a href="#about" class="hover:text-gray-200 text-white">Sobre nós</a></li>
-                    <li><a href="#contact" class="hover:text-gray-200 text-white">Contato</a></li>
+                    <li><a href="#menu" class="hover:text-gray-200 text-white menu-link" data-section="Menu">Menu</a></li>
+                    <li><a href="#drink" class="hover:text-gray-200 text-white menu-link" data-section="Bebidas">Bebidas</a></li>
+                    <li><a href="#about" class="hover:text-gray-200 text-white menu-link" data-section="Sobre Nós">Sobre nós</a></li>
+                    <li><a href="#contact" class="hover:text-gray-200 text-white menu-link" data-section="Contato">Contato</a></li>
                 </ul>
             </nav>
         </div>
+
+        <!-- Display Section Name -->
+        <div id="section-display" class="text-center text-white py-2"></div>
     </header>
 
     <main>
@@ -61,7 +64,7 @@
                             <p class="text-gray-700 text-base mb-2">Deliciosa pizza de queijo mussarela.</p>
                             <p class="text-gray-900 font-bold">Preço: R$ 20,00</p>
                             <button
-                                class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
+                                class="comprar-button block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
                         </div>
                     </div>
                     <!-- Pizza 2 -->
@@ -72,7 +75,7 @@
                             <p class="text-gray-700 text-base mb-2">Deliciosa pizza de calabresa com cebola e pimentão.</p>
                             <p class="text-gray-900 font-bold">Preço: R$ 23,00</p>
                             <button
-                                class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
+                                class="comprar-button block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
                         </div>
                     </div>
                     <!-- Pizza 3 -->
@@ -84,7 +87,7 @@
                             <p class="text-gray-700 text-base mb-2">Deliciosa pizza de frango desfiado com catupiry cremoso.</p>
                             <p class="text-gray-900 font-bold">Preço: R$ 25,00</p>
                             <button
-                                class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
+                                class="comprar-button block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
                         </div>
                     </div>
                     <!-- Pizza 4 -->
@@ -95,7 +98,7 @@
                             <p class="text-gray-700 text-base mb-2">Pizza com generosas fatias de pepperoni.</p>
                             <p class="text-gray-900 font-bold">Preço: R$ 22,00</p>
                             <button
-                                class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
+                                class="comprar-button block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
                         </div>
                     </div>
                     <!-- Pizza 5 -->
@@ -107,7 +110,7 @@
                                 manjericão.</p>
                             <p class="text-gray-900 font-bold">Preço: R$ 21,00</p>
                             <button
-                                class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
+                                class="comprar-button block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
                         </div>
                     </div>
                     <!-- Pizza 6 -->
@@ -119,7 +122,7 @@
                                 azeitonas.</p>
                             <p class="text-gray-900 font-bold">Preço: R$ 24,00</p>
                             <button
-                                class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
+                                class="comprar-button block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
                         </div>
                     </div>
                 </div>
@@ -137,7 +140,7 @@
                                 <p class="text-gray-700 text-base mb-2">2 Litros.</p>
                                 <p class="text-gray-900 font-bold">Preço: R$ 11,90</p>
                                 <button
-                                    class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
+                                    class="comprar-button block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
                             </div>
                         </div>
 
@@ -150,7 +153,7 @@
                                 <p class="text-gray-700 text-base mb-2">Lata de 220ml.</p>
                                 <p class="text-gray-900 font-bold">Preço: R$ 3,00</p>
                                 <button
-                                    class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
+                                    class="comprar-button block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
                             </div>
                         </div>
 
@@ -162,7 +165,7 @@
                                 <p class="text-gray-700 text-base mb-2">Lata de 350ml.</p>
                                 <p class="text-gray-900 font-bold">Preço: R$ 5,00</p>
                                 <button
-                                    class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
+                                    class="comprar-button block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
                             </div>
                         </div>
 
@@ -174,7 +177,7 @@
                                 <p class="text-gray-700 text-base mb-2">Lata de 350ml.</p>
                                 <p class="text-gray-900 font-bold">Preço: R$ 5,00</p>
                                 <button
-                                    class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
+                                    class="comprar-button block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
                             </div>
                         </div>
 
@@ -186,7 +189,7 @@
                                 <p class="text-gray-700 text-base mb-2">Suco natural.</p>
                                 <p class="text-gray-900 font-bold">Preço: R$ 4,50</p>
                                 <button
-                                    class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
+                                    class="comprar-button block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
                             </div>
                         </div>
 
@@ -198,7 +201,7 @@
                                 <p class="text-gray-700 text-base mb-2">Garrafa de 500ml.</p>
                                 <p class="text-gray-900 font-bold">Preço: R$ 3,00</p>
                                 <button
-                                    class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
+                                    class="comprar-button block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
                             </div>
                         </div>
 
@@ -211,7 +214,7 @@
                                 <p class="text-gray-700 text-base mb-2">Lata de 350ml.</p>
                                 <p class="text-gray-900 font-bold">Preço: R$ 5,00</p>
                                 <button
-                                    class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
+                                    class="comprar-button block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
                             </div>
                         </div>
 
@@ -223,7 +226,7 @@
                                 <p class="text-gray-700 text-base mb-2">Lata de 350ml.</p>
                                 <p class="text-gray-900 font-bold">Preço: R$ 5,00</p>
                                 <button
-                                    class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
+                                    class="comprar-button block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
                             </div>
                         </div>
 
@@ -235,7 +238,7 @@
                                 <p class="text-gray-700 text-base mb-2">Lata de 350ml.</p>
                                 <p class="text-gray-900 font-bold">Preço: R$ 5,00</p>
                                 <button
-                                    class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
+                                    class="comprar-button block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
                             </div>
                         </div>
 
@@ -247,7 +250,7 @@
                                 <p class="text-gray-700 text-base mb-2">Coco natural.</p>
                                 <p class="text-gray-900 font-bold">Preço: R$ 4,00</p>
                                 <button
-                                    class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
+                                    class="comprar-button block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
                             </div>
                         </div>
 
@@ -259,7 +262,7 @@
                                 <p class="text-gray-700 text-base mb-2">Suco natural.</p>
                                 <p class="text-gray-900 font-bold">Preço: R$ 5,00</p>
                                 <button
-                                    class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
+                                    class="comprar-button block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
                             </div>
                         </div>
 
@@ -271,7 +274,7 @@
                                 <p class="text-gray-700 text-base mb-2">2 Litros.</p>
                                 <p class="text-gray-900 font-bold">Preço: R$ 5,00</p>
                                 <button
-                                    class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
+                                    class="comprar-button block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
                             </div>
                         </div>
                     </div>

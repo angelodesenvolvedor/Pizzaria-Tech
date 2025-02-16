@@ -4,7 +4,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const sectionDisplay = document.getElementById('section-display');
     const menuLinks = document.querySelectorAll('.menu-link');
     const comprarButtons = document.querySelectorAll('.comprar-button');
+    const mensagemCarrinho = document.getElementById('mensagem-carrinho');
     let timeoutId;
+    let mensagemTimeoutId;
 
     function closeMenu() {
         mobileMenu.classList.add('hidden');
@@ -12,6 +14,22 @@ document.addEventListener('DOMContentLoaded', function () {
             clearTimeout(timeoutId);
             timeoutId = null;
         }
+    }
+
+    function mostrarMensagem(mensagem) {
+        mensagemCarrinho.textContent = mensagem;
+        mensagemCarrinho.classList.add('mostrar');
+
+        if (mensagemTimeoutId) {
+            clearTimeout(mensagemTimeoutId);
+        }
+
+        mensagemTimeoutId = setTimeout(esconderMensagem, 3000);
+    }
+
+    function esconderMensagem() {
+        mensagemCarrinho.classList.remove('mostrar');
+        mensagemCarrinho.textContent = '';
     }
 
     menuToggle.addEventListener('click', function () {
@@ -59,9 +77,4 @@ document.addEventListener('DOMContentLoaded', function () {
             mostrarMensagem(`Produto: ${produtoNome}\n${produtoPreco}\nAdicionado ao carrinho!`);
         });
     });
-
-    function mostrarMensagem(mensagem) {
-        const mensagemCarrinho = document.getElementById('mensagem-carrinho');
-        mensagemCarrinho.textContent = mensagem;
-    }
 });

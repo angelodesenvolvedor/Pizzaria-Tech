@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
 </head>
+
 <body class="bg-gray-100 font-sans">
     <header class="bg-red-600 text-white py-4 shadow-md">
         <div class="container mx-auto px-4">
@@ -25,206 +27,256 @@
         </div>
     </header>
 
-    <section id="menu" class="py-12">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-semibold mb-6 text-center">Menu</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="pizza bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="./image/queijo.jpg" alt="Pizza de Queijo" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-xl font-semibold mb-2">Queijo</h3>
-                        <p class="text-gray-700 text-base mb-2">Deliciosa pizza de queijo mussarela.</p>
-                        <p class="text-gray-900 font-bold">Preço: R$ 20,00</p>
-                        <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4">Comprar</button>
+    <main>
+        <section id="menu" class="py-12">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-semibold mb-6 text-center">Menu</h2>
+                <!-- Pizza Menu -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Pizza 1 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="./image/queijo.jpg" alt="Pizza de Queijo" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold mb-2">Queijo</h3>
+                            <p class="text-gray-700 text-base mb-2">Deliciosa pizza de queijo mussarela.</p>
+                            <p class="text-gray-900 font-bold">Preço: R$ 20,00</p>
+                            <button
+                                class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
+                        </div>
+                    </div>
+                    <!-- Pizza 2 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="./image/calabresa.jpg" alt="Pizza de Calabresa" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold mb-2">Calabresa</h3>
+                            <p class="text-gray-700 text-base mb-2">Deliciosa pizza de calabresa com cebola e pimentão.</p>
+                            <p class="text-gray-900 font-bold">Preço: R$ 23,00</p>
+                            <button
+                                class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
+                        </div>
+                    </div>
+                    <!-- Pizza 3 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="./image/frango_catupiry.jpg" alt="Pizza de Frango com Catupiry"
+                            class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold mb-2">Frango</h3>
+                            <p class="text-gray-700 text-base mb-2">Deliciosa pizza de frango desfiado com catupiry cremoso.</p>
+                            <p class="text-gray-900 font-bold">Preço: R$ 25,00</p>
+                            <button
+                                class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
+                        </div>
+                    </div>
+                    <!-- Pizza 4 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="./image/pepperoni.jpg" alt="Pizza de Pepperoni" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold mb-2">Pepperoni</h3>
+                            <p class="text-gray-700 text-base mb-2">Pizza com generosas fatias de pepperoni.</p>
+                            <p class="text-gray-900 font-bold">Preço: R$ 22,00</p>
+                            <button
+                                class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
+                        </div>
+                    </div>
+                    <!-- Pizza 5 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="./image/margherita.jpg" alt="Pizza Margherita" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold mb-2">Margherita</h3>
+                            <p class="text-gray-700 text-base mb-2">Clássica pizza italiana com tomate, mussarela e
+                                manjericão.</p>
+                            <p class="text-gray-900 font-bold">Preço: R$ 21,00</p>
+                            <button
+                                class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
+                        </div>
+                    </div>
+                    <!-- Pizza 6 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="./image/portuguesa.jpg" alt="Pizza Portuguesa" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold mb-2">Portuguesa</h3>
+                            <p class="text-gray-700 text-base mb-2">Clássica pizza portuguesa com presunto, ovos, cebola e
+                                azeitonas.</p>
+                            <p class="text-gray-900 font-bold">Preço: R$ 24,00</p>
+                            <button
+                                class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
+                        </div>
                     </div>
                 </div>
-                <div class="pizza bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="./image/calabresa.jpg" alt="Pizza de Calabresa" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-xl font-semibold mb-2">Calabresa</h3>
-                        <p class="text-gray-700 text-base mb-2">Deliciosa pizza de calabresa com cebola e pimentão.</p>
-                        <p class="text-gray-900 font-bold">Preço: R$ 23,00</p>
-                        <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4">Comprar</button>
+
+                <!-- Drink Menu -->
+                <h2 class="text-3xl font-semibold mt-12 mb-6 text-center">Bebidas</h2>
+                <section id="drink">
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+
+                        <!-- Drink 1 -->
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                            <img src="./image/refrigerante.jpg" alt="Refrigerante" class="w-full h-32 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-lg font-semibold mb-2">Refrigerante</h3>
+                                <p class="text-gray-700 text-base mb-2">2 Litros.</p>
+                                <p class="text-gray-900 font-bold">Preço: R$ 11,90</p>
+                                <button
+                                    class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
+                            </div>
+                        </div>
+
+                        <!-- Drink 2 -->
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                            <img src="./image/fantauva.jpg" alt="Refrigerante Fanta-Uva"
+                                class="w-full h-32 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-lg font-semibold mb-2">Fanta-Uva</h3>
+                                <p class="text-gray-700 text-base mb-2">Lata de 220ml.</p>
+                                <p class="text-gray-900 font-bold">Preço: R$ 3,00</p>
+                                <button
+                                    class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
+                            </div>
+                        </div>
+
+                        <!-- Drink 3 -->
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                            <img src="./image/pepsi.jpg" alt="Refrigerante Pepsi" class="w-full h-32 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-lg font-semibold mb-2">Pepsi</h3>
+                                <p class="text-gray-700 text-base mb-2">Lata de 350ml.</p>
+                                <p class="text-gray-900 font-bold">Preço: R$ 5,00</p>
+                                <button
+                                    class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
+                            </div>
+                        </div>
+
+                        <!-- Drink 4 -->
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                            <img src="./image/cocacola.jpg" alt="Refrigerante Coca-Cola" class="w-full h-32 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-lg font-semibold mb-2">Coca-Cola</h3>
+                                <p class="text-gray-700 text-base mb-2">Lata de 350ml.</p>
+                                <p class="text-gray-900 font-bold">Preço: R$ 5,00</p>
+                                <button
+                                    class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
+                            </div>
+                        </div>
+
+                        <!-- Drink 5 -->
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                            <img src="./image/suco_laranja.jpg" alt="Suco de Laranja" class="w-full h-32 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-lg font-semibold mb-2">Suco de Laranja</h3>
+                                <p class="text-gray-700 text-base mb-2">Suco natural.</p>
+                                <p class="text-gray-900 font-bold">Preço: R$ 4,50</p>
+                                <button
+                                    class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
+                            </div>
+                        </div>
+
+                        <!-- Drink 6 -->
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                            <img src="./image/agua.jpg" alt="Água Mineral" class="w-full h-32 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-lg font-semibold mb-2">Água Mineral</h3>
+                                <p class="text-gray-700 text-base mb-2">Garrafa de 500ml.</p>
+                                <p class="text-gray-900 font-bold">Preço: R$ 3,00</p>
+                                <button
+                                    class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
+                            </div>
+                        </div>
+
+                        <!-- Drink 7 -->
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                            <img src="./image/guarana.jpg" alt="Refrigerante Guaraná Antarctica"
+                                class="w-full h-32 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-lg font-semibold mb-2">Guaraná Antarctica</h3>
+                                <p class="text-gray-700 text-base mb-2">Lata de 350ml.</p>
+                                <p class="text-gray-900 font-bold">Preço: R$ 5,00</p>
+                                <button
+                                    class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
+                            </div>
+                        </div>
+
+                        <!-- Drink 8 -->
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                            <img src="./image/sprite.jpg" alt="Refrigerante Sprite" class="w-full h-32 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-lg font-semibold mb-2">Refrigerante Sprite</h3>
+                                <p class="text-gray-700 text-base mb-2">Lata de 350ml.</p>
+                                <p class="text-gray-900 font-bold">Preço: R$ 5,00</p>
+                                <button
+                                    class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
+                            </div>
+                        </div>
+
+                        <!-- Drink 9 -->
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                            <img src="./image/fanta.jpg" alt="Refrigerante Fanta Laranja" class="w-full h-32 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-lg font-semibold mb-2">Fanta Laranja</h3>
+                                <p class="text-gray-700 text-base mb-2">Lata de 350ml.</p>
+                                <p class="text-gray-900 font-bold">Preço: R$ 5,00</p>
+                                <button
+                                    class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
+                            </div>
+                        </div>
+
+                        <!-- Drink 10 -->
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                            <img src="./image/agua_coco.jpg" alt="Água de Coco" class="w-full h-32 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-lg font-semibold mb-2">Água de Coco</h3>
+                                <p class="text-gray-700 text-base mb-2">Coco natural.</p>
+                                <p class="text-gray-900 font-bold">Preço: R$ 4,00</p>
+                                <button
+                                    class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
+                            </div>
+                        </div>
+
+                        <!-- Drink 11 -->
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                            <img src="./image/suco_maracuja.jpg" alt="Suco de Maracujá" class="w-full h-32 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-lg font-semibold mb-2">Suco de Maracujá</h3>
+                                <p class="text-gray-700 text-base mb-2">Suco natural.</p>
+                                <p class="text-gray-900 font-bold">Preço: R$ 5,00</p>
+                                <button
+                                    class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
+                            </div>
+                        </div>
+
+                        <!-- Drink 12 -->
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                            <img src="./image/kuat.jpg" alt="Refrigerante Kuat" class="w-full h-32 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-lg font-semibold mb-2">Refrigerante Kuat</h3>
+                                <p class="text-gray-700 text-base mb-2">2 Litros.</p>
+                                <p class="text-gray-900 font-bold">Preço: R$ 5,00</p>
+                                <button
+                                    class="block w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 text-center">Comprar</button>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="pizza bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="./image/frango_catupiry.jpg" alt="Pizza de Frango com Catupiry" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-xl font-semibold mb-2">Frango</h3>
-                        <p class="text-gray-700 text-base mb-2">Deliciosa pizza de frango desfiado com catupiry cremoso.</p>
-                        <p class="text-gray-900 font-bold">Preço: R$ 25,00</p>
-                        <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4">Comprar</button>
-                    </div>
-                </div>
+                </section>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
-                <div class="pizza bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="./image/pepperoni.jpg" alt="Pizza de Pepperoni" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-xl font-semibold mb-2">Pepperoni</h3>
-                        <p class="text-gray-700 text-base mb-2">Pizza com generosas fatias de pepperoni.</p>
-                        <p class="text-gray-900 font-bold">Preço: R$ 22,00</p>
-                        <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4">Comprar</button>
-                    </div>
-                </div>
-                <div class="pizza bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="./image/margherita.jpg" alt="Pizza Margherita" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-xl font-semibold mb-2">Margherita</h3>
-                        <p class="text-gray-700 text-base mb-2">Clássica pizza italiana com tomate, mussarela e manjericão.</p>
-                        <p class="text-gray-900 font-bold">Preço: R$ 21,00</p>
-                        <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4">Comprar</button>
-                    </div>
-                </div>
-                <div class="pizza bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="./image/portuguesa.jpg" alt="Pizza Portuguesa" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-xl font-semibold mb-2">Portuguesa</h3>
-                        <p class="text-gray-700 text-base mb-2">Clássica pizza portuguesa com presunto, ovos, cebola e azeitonas.</p>
-                        <p class="text-gray-900 font-bold">Preço: R$ 24,00</p>
-                        <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4">Comprar</button>
-                    </div>
-                </div>
+        </section>
+
+        <section id="about" class="py-12 bg-gray-200">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-semibold mb-6 text-center">Sobre nós</h2>
+                <p class="text-gray-700 text-lg leading-relaxed">A Pizzaria Delícia tem como missão oferecer as melhores
+                    pizzas da cidade, feitas com ingredientes frescos e de qualidade.
+                    Além das pizzas deliciosas, oferecemos uma variedade de bebidas refrescantes para complementar sua
+                    refeição.</p>
             </div>
+        </section>
 
-            <h2 class="text-3xl font-semibold mt-12 mb-6 text-center">Bebidas</h2>
-            <section id="drink">
-                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6">
-                    <div class="drink bg-white rounded-lg shadow-md overflow-hidden">
-                      <img src="./image/refrigerante.jpg" alt="Refrigerante" class="w-full h-32 object-cover">
-                      <div class="p-4">
-                        <h3 class="text-lg font-semibold mb-2">Refrigerante</h3>
-                        <p class="text-gray-700 text-base mb-2">2 Litros.</p>
-                        <p class="text-gray-900 font-bold">Preço: R$ 11,90</p>
-                        <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4">Comprar</button>
-                      </div>
-                    </div>
-        
-                    <div class="drink bg-white rounded-lg shadow-md overflow-hidden">
-                        <img src="./image/fantauva.jpg" alt="Refrigerante Fanta-Uva" class="w-full h-32 object-cover">
-                        <div class="p-4">
-                          <h3 class="text-lg font-semibold mb-2">Fanta-Uva</h3>
-                          <p class="text-gray-700 text-base mb-2">Lata de 220ml.</p>
-                          <p class="text-gray-900 font-bold">Preço: R$ 3,00</p>
-                          <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4">Comprar</button>
-                        </div>
-                      </div>
-            
-                    <div class="drink bg-white rounded-lg shadow-md overflow-hidden">
-                        <img src="./image/pepsi.jpg" alt="Refrigerante Pepsi" class="w-full h-32 object-cover">
-                        <div class="p-4">
-                            <h3 class="text-lg font-semibold mb-2">Pepsi</h3>
-                            <p class="text-gray-700 text-base mb-2">Lata de 350ml.</p>
-                            <p class="text-gray-900 font-bold">Preço: R$ 5,00</p>
-                            <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4">Comprar</button>
-                        </div>
-                    </div>
-            
-                    <div class="drink bg-white rounded-lg shadow-md overflow-hidden">
-                        <img src="./image/cocacola.jpg" alt="Refrigerante Coca-Cola" class="w-full h-32 object-cover">
-                        <div class="p-4">
-                            <h3 class="text-lg font-semibold mb-2">Coca-Cola</h3>
-                            <p class="text-gray-700 text-base mb-2">Lata de 350ml.</p>
-                            <p class="text-gray-900 font-bold">Preço: R$ 5,00</p>
-                            <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4">Comprar</button>
-                        </div>
-                    </div>
-        
-                    <div class="drink bg-white rounded-lg shadow-md overflow-hidden">
-                        <img src="./image/suco_laranja.jpg" alt="Suco de Laranja" class="w-full h-32 object-cover">
-                        <div class="p-4">
-                            <h3 class="text-lg font-semibold mb-2">Suco de Laranja</h3>
-                            <p class="text-gray-700 text-base mb-2">Suco natural.</p>
-                            <p class="text-gray-900 font-bold">Preço: R$ 4,50</p>
-                            <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4">Comprar</button>
-                        </div>
-                    </div>
-        
-                    <div class="drink bg-white rounded-lg shadow-md overflow-hidden">
-                         <img src="./image/agua.jpg" alt="Água Mineral" class="w-full h-32 object-cover">
-                         <div class="p-4">
-                           <h3 class="text-lg font-semibold mb-2">Água Mineral</h3>
-                           <p class="text-gray-700 text-base mb-2">Garrafa de 500ml.</p>
-                           <p class="text-gray-900 font-bold">Preço: R$ 3,00</p>
-                           <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4">Comprar</button>
-                         </div>
-                    </div>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6 mt-6">
-                    <div class="drink bg-white rounded-lg shadow-md overflow-hidden">
-                        <img src="./image/guarana.jpg" alt="Refrigerante Guaraná Antarctica" class="w-full h-32 object-cover">
-                        <div class="p-4">
-                            <h3 class="text-lg font-semibold mb-2">Guaraná Antarctica</h3>
-                            <p class="text-gray-700 text-base mb-2">Lata de 350ml.</p>
-                            <p class="text-gray-900 font-bold">Preço: R$ 5,00</p>
-                            <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4">Comprar</button>
-                        </div>
-                    </div>
-                    <div class="drink bg-white rounded-lg shadow-md overflow-hidden">
-                        <img src="./image/sprite.jpg" alt="Refrigerante Sprite" class="w-full h-32 object-cover">
-                        <div class="p-4">
-                            <h3 class="text-lg font-semibold mb-2">Refrigerante Sprite</h3>
-                            <p class="text-gray-700 text-base mb-2">Lata de 350ml.</p>
-                            <p class="text-gray-900 font-bold">Preço: R$ 5,00</p>
-                            <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4">Comprar</button>
-                        </div>
-                    </div>
-                    <div class="drink bg-white rounded-lg shadow-md overflow-hidden">
-                        <img src="./image/fanta.jpg" alt="Refrigerante Fanta Laranja" class="w-full h-32 object-cover">
-                        <div class="p-4">
-                            <h3 class="text-lg font-semibold mb-2">Fanta Laranja</h3>
-                            <p class="text-gray-700 text-base mb-2">Lata de 350ml.</p>
-                            <p class="text-gray-900 font-bold">Preço: R$ 5,00</p>
-                            <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4">Comprar</button>
-                        </div>
-                    </div>
-                    <div class="drink bg-white rounded-lg shadow-md overflow-hidden">
-                        <img src="./image/agua_coco.jpg" alt="Água de Coco" class="w-full h-32 object-cover">
-                        <div class="p-4">
-                            <h3 class="text-lg font-semibold mb-2">Água de Coco</h3>
-                            <p class="text-gray-700 text-base mb-2">Coco natural.</p>
-                            <p class="text-gray-900 font-bold">Preço: R$ 4,00</p>
-                            <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4">Comprar</button>
-                        </div>
-                    </div>
-                    <div class="drink bg-white rounded-lg shadow-md overflow-hidden">
-                        <img src="./image/suco_maracuja.jpg" alt="Suco de Maracujá" class="w-full h-32 object-cover">
-                        <div class="p-4">
-                            <h3 class="text-lg font-semibold mb-2">Suco de Maracujá</h3>
-                            <p class="text-gray-700 text-base mb-2">Suco natural.</p>
-                            <p class="text-gray-900 font-bold">Preço: R$ 5,00</p>
-                            <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4">Comprar</button>
-                        </div>
-                    </div>
-                    <div class="drink bg-white rounded-lg shadow-md overflow-hidden">
-                        <img src="./image/kuat.jpg" alt="Refrigerante Kuat" class="w-full h-32 object-cover">
-                        <div class="p-4">
-                            <h3 class="text-lg font-semibold mb-2">Refrigerante Kuat</h3>
-                            <p class="text-gray-700 text-base mb-2"> 2 Litros.</p>
-                            <p class="text-gray-900 font-bold">Preço: R$ 5,00</p>
-                            <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4">Comprar</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </section>
-
-    <section id="about" class="py-12 bg-gray-200">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-semibold mb-6 text-center">Sobre nós</h2>
-            <p class="text-gray-700 text-lg leading-relaxed">A Pizzaria Tech tem como missão oferecer as melhores pizzas da cidade, feitas com ingredientes frescos e de qualidade. 
-                Além das pizzas deliciosas, oferecemos uma variedade de bebidas refrescantes para complementar sua refeição.</p>
-        </div>
-    </section>
-
-    <section id="contact" class="py-12">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-semibold mb-6 text-center">Contato</h2>
-            <p class="text-gray-700 text-lg">Telefone: (84) 9876-5432</p>
-            <p class="text-gray-700 text-lg">Endereço: Rua Ozeas Pinto, 123 - Viçosa</p>
-        </div>
-    </section>
+        <section id="contact" class="py-12">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-semibold mb-6 text-center">Contato</h2>
+                <p class="text-gray-700 text-lg">Telefone: (84) 9876-5432</p>
+                <p class="text-gray-700 text-lg">Endereço: Rua Ozeas Pinto, 123 - Viçosa</p>
+            </div>
+        </section>
+    </main>
 
     <footer class="bg-gray-800 text-white py-4">
         <div class="container mx-auto px-4">
@@ -232,4 +284,5 @@
         </div>
     </footer>
 </body>
+
 </html>

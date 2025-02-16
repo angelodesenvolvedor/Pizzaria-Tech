@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const mobileMenu = document.getElementById('mobile-menu');
     const sectionDisplay = document.getElementById('section-display');
     const menuLinks = document.querySelectorAll('.menu-link');
+    const comprarButtons = document.querySelectorAll('.comprar-button');
     let timeoutId;
 
     function closeMenu() {
@@ -46,6 +47,16 @@ document.addEventListener('DOMContentLoaded', function () {
             if (!mobileMenu.classList.contains('hidden')) {
                 closeMenu();
             }
+        });
+    });
+
+    comprarButtons.forEach(button => {
+        button.addEventListener('click', function (event) {
+            event.preventDefault();
+            const produtoNome = this.parentNode.querySelector('h3').textContent;
+            const produtoPreco = this.parentNode.querySelector('.font-bold').textContent;
+
+            alert(`Produto: ${produtoNome}\n${produtoPreco}\nAdicionado ao carrinho!`);
         });
     });
 });

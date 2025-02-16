@@ -15,7 +15,17 @@
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center">
                 <h1 class="text-3xl font-bold">Pizzaria Tech</h1>
-                <nav>
+
+                <!-- Hamburger Menu (Hidden on larger screens) -->
+                <button id="menu-toggle" class="lg:hidden focus:outline-none">
+                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                            d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />
+                    </svg>
+                </button>
+
+                <!-- Navigation Links -->
+                <nav class="hidden lg:block" id="nav-links">
                     <ul class="flex space-x-6">
                         <li><a href="#menu" class="hover:text-gray-200">Menu</a></li>
                         <li><a href="#drink" class="hover:text-gray-200">Bebidas</a></li>
@@ -24,6 +34,16 @@
                     </ul>
                 </nav>
             </div>
+
+            <!-- Mobile Menu (Hidden by default) -->
+            <nav id="mobile-menu" class="lg:hidden hidden bg-red-600 py-2">
+                <ul class="flex flex-col items-center space-y-4">
+                    <li><a href="#menu" class="hover:text-gray-200 text-white">Menu</a></li>
+                    <li><a href="#drink" class="hover:text-gray-200 text-white">Bebidas</a></li>
+                    <li><a href="#about" class="hover:text-gray-200 text-white">Sobre nós</a></li>
+                    <li><a href="#contact" class="hover:text-gray-200 text-white">Contato</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
@@ -283,6 +303,8 @@
             <p class="text-center">© 2025 Pizzaria Tech</p>
         </div>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>

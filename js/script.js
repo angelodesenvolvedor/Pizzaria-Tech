@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
-    const sectionDisplay = document.getElementById('section-display');
     const menuLinks = document.querySelectorAll('.menu-link');
     let timeoutId;
 
@@ -32,17 +31,16 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Exibe o Nome da Seção
+    // Vai diretamente para a seção com rolagem suave
     menuLinks.forEach(link => {
         link.addEventListener('click', function (event) {
             event.preventDefault(); // Impede o comportamento padrão do link (navegar)
             const targetId = this.getAttribute('href').substring(1); // Pega o ID do alvo (ex: "menu")
             const targetSection = document.getElementById(targetId); // Encontra a seção
-            const sectionTitle = targetSection.querySelector('h2').textContent; // Pega o texto do H2
-            sectionDisplay.textContent = `Você está em: ${sectionTitle}`; // Exibe
 
-            //Opcional: Rola suavemente para a seção
+            // Rola suavemente para a seção
             targetSection.scrollIntoView({ behavior: 'smooth' });
+
             if (mobileMenu.classList.length === 0) {
                 closeMenu();
             }

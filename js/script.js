@@ -35,7 +35,13 @@ document.addEventListener('DOMContentLoaded', function () {
             const targetId = this.getAttribute('href').substring(1);
             const targetSection = document.getElementById(targetId);
 
-            targetSection.scrollIntoView({ behavior: 'smooth' });
+            const headerHeight = document.querySelector('header').offsetHeight;
+            const targetPosition = targetSection.offsetTop - headerHeight;
+
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
 
             if (!mobileMenu.classList.contains('hidden')) {
                 closeMenu();

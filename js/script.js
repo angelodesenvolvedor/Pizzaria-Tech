@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
+    const sectionDisplay = document.getElementById('section-display');
     const menuLinks = document.querySelectorAll('.menu-link');
     let timeoutId;
 
@@ -41,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // Rola suavemente para a seção
             targetSection.scrollIntoView({ behavior: 'smooth' });
 
-            if (mobileMenu.classList.length === 0) {
+            if (!mobileMenu.classList.contains('hidden')) {
                 closeMenu();
             }
         });

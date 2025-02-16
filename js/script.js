@@ -56,7 +56,11 @@ document.addEventListener('DOMContentLoaded', function () {
             const produtoNome = this.parentNode.querySelector('h3').textContent;
             const produtoPreco = this.parentNode.querySelector('.font-bold').textContent;
 
-            alert(`Produto: ${produtoNome}\n${produtoPreco}\nAdicionado ao carrinho!`);
+            mostrarMensagem(`Produto: ${produtoNome}\n${produtoPreco}`);
         });
     });
+
+    function mostrarMensagem(mensagem) {
+        console.log(mensagem);
+    }
 });
